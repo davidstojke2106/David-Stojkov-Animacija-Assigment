@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>David Stojkov "Animacija"</title>
+    <style>
+
+        body {
+            background: black;
+        }
+
+        .border-circle {
+           margin: auto auto;
+            width: 500px;
+            height: 500px;
+            border-radius: 100%;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            animation-name: rotate;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-play-state: running;
+           
+           
+          
+            
+        
+        }
+
+        @keyframes rotate {
+            0% {
+                transform:rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .border-circle > div:nth-child(1) {
+            
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            filter: blur(40px);
+            
+            
+        }
+
+        
+        .circle {
+            transform: translate(0,-465px);
+            margin: auto auto;
+            width: 430px;
+            height: 430px;
+            border-radius: 100%;
+            background: #050210;
+            
+            
+        }
+
+     
+        
+
+        /*span {
+            transform: translate(939px,-693px);
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 100px;
+            background: #150941;
+            animation-name: shrink;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-play-state: running;
+            
+        }*/
+
+        /*@keyframes  shrink {
+            0% {
+                width: 20px;
+                height: 20px;
+            }
+
+            50% {
+                
+                
+                
+            }
+
+            100% {
+                width: 430px;
+                height: 430px;
+                border-radius: 100%;
+            }
+            
+        }*/
+        
+          
+
+
+
+        
+
+
+    
+       
+       
+        
+
+        
+
+
+       
+        
+
+    
+
+    </style>
+</head>
+<body>
+
+    <div class="border-circle">
+       <div></div>
+       
+    </div>
+
+    <div class="circle">
+    </div>
+
+    <span></span>
+
+</body>
+</html>
